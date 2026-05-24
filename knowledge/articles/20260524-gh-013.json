@@ -1,0 +1,27 @@
+{
+  "id": "20260524-gh-013",
+  "title": "tensorflow/tensorflow",
+  "source_url": "https://github.com/tensorflow/tensorflow",
+  "source_type": "github",
+  "summary": "TensorFlow开源机器学习框架，支持分布式深度学习",
+  "tags": [
+    "framework",
+    "python",
+    "open-source"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T09:27:46Z",
+  "analyzed_at": "2026-05-24T09:28:07Z",
+  "published_at": null,
+  "raw_content": "tensorflow/tensorflow: An Open Source Machine Learning Framework for Everyone (stars: 195,253 | lang: C++ | topics: deep-learning, deep-neural-networks, distributed, machine-learning, ml, neural-network, python, tensorflow)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "面向所有人的开源机器学习框架",
+      "支持分布式深度神经网络训练",
+      "主要使用C++实现，提供Python接口"
+    ],
+    "impact": "作为最主流的深度学习框架之一，TensorFlow持续推动AI研究和工业应用的发展",
+    "category": "framework"
+  }
+}

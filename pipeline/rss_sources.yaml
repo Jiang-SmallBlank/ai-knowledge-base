@@ -7,8 +7,8 @@ sources:
     category: general-tech
     enabled: true
 
-  - name: Lobsters AI/ML
-    url: https://lobste.rs/tags/ml.json
+  - name: Lobsters AI
+    url: https://lobste.rs/t/ai.rss
     category: general-tech
     enabled: true
 
@@ -25,14 +25,16 @@ sources:
   # 公司博客
   # ─────────────────────────────────────────────────────────
   - name: OpenAI Blog
-    url: https://openai.com/blog/rss/
+    url: https://openai.com/index/rss/
     category: company-blog
-    enabled: true
+    enabled: false
+    reason: "返回 403，可能已屏蔽 RSS 爬虫"
 
   - name: Anthropic Research
-    url: https://www.anthropic.com/research/rss
+    url: https://www.anthropic.com/research
     category: company-blog
-    enabled: true
+    enabled: false
+    reason: "未公开 RSS feed，需从页面解析"
 
   - name: Hugging Face Blog
     url: https://huggingface.co/blog/feed.xml
@@ -58,7 +60,8 @@ sources:
   - name: Google AI Blog
     url: https://blog.google/technology/ai/rss/
     category: industry
-    enabled: true
+    enabled: false
+    reason: "SSL 连接超时，本地网络环境问题"
 
   - name: The Verge (AI)
     url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml

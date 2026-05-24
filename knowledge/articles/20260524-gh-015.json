@@ -1,0 +1,28 @@
+{
+  "id": "20260524-gh-015",
+  "title": "Significant-Gravitas/AutoGPT",
+  "source_url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "source_type": "github",
+  "summary": "AutoGPT：人人可用的自主AI代理平台",
+  "tags": [
+    "agent",
+    "open-source",
+    "ai",
+    "python"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T09:27:46Z",
+  "analyzed_at": "2026-05-24T09:28:13Z",
+  "published_at": null,
+  "raw_content": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters. (stars: 184,493 | lang: Python | topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, claude, gpt, llama-api, llm, openai, python)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "提供人人可用的自主AI代理工具，支持多种LLM（GPT、Claude、Llama等）",
+      "Python实现，拥有18.4万+星标，是AI代理领域标杆项目",
+      "聚焦自主代理能力，降低AI应用开发门槛"
+    ],
+    "impact": "作为最知名的自主AI代理项目之一，AutoGPT推动了AI代理的民主化，使开发者能快速构建和部署智能代理。",
+    "category": "framework"
+  }
+}
