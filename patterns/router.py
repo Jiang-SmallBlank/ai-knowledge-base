@@ -224,12 +224,28 @@ _HANDLERS: dict[str, Any] = {
 # ── Unified entry point ──
 
 
+def _is_empty_result(result: str) -> bool:
+    """Check if a handler returned an empty/no-result message."""
+    no_result_indicators = [
+        "未找到匹配的仓库", "未找到相关内容",
+        "知识库中暂无内容", "知识库中未找到",
+        "GitHub API 请求失败", "GitHub API 网络错误",
+    ]
+    for indicator in no_result_indicators:
+        if indicator in result:
+            return True
+    return False
+
+
 def route(query: str) -> str:
     """Route a user query to the appropriate handler.
 
     Two-layer strategy:
       1. Keyword matching (zero-cost)
       2. LLM classification fallback
+
+    If the specialized handler returns no useful result, falls back
+    to general_chat so the user always gets a meaningful answer.
 
     Args:
         query: The raw user input string.
@@ -246,7 +262,14 @@ def route(query: str) -> str:
         intent = _llm_classify(query)
 
     handler = _HANDLERS.get(intent, _handle_general_chat)
-    return handler(query)
+    result = handler(query)
+
+    # Fallback: if specialized handler had no result, let LLM answer directly
+    if intent != _INTENT_GENERAL_CHAT and _is_empty_result(result):
+        fallback = _handle_general_chat(query)
+        return f"{result}\n\n--- 以下是 AI 助手的回答 ---\n{fallback}"
+
+    return result
 
 
 # ── Test entry ──
