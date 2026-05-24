@@ -539,28 +539,92 @@ def save_articles(articles: list[AnalyzedArticle]) -> int:
 # ─────────────────────────────────────────────────────────────
 
 
+def _save_raw(raw_items: list[RawItem]) -> int:
+    fname = f"raw-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}.json"
+    fpath = RAW_DIR / fname
+    data = [
+        {
+            "source_type": i.source_type,
+            "title": i.title,
+            "url": i.url,
+            "content": i.content,
+            "collected_at": i.collected_at,
+            "metadata": i.metadata,
+        }
+        for i in raw_items
+    ]
+    try:
+        fpath.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        logger.info("Saved raw data: %s (%d items)", fname, len(raw_items))
+        return len(raw_items)
+    except OSError as e:
+        logger.error("Failed to save raw data: %s", e)
+        return 0
+
+
+def _load_latest_raw() -> list[RawItem]:
+    files = sorted(RAW_DIR.glob("raw-*.json"), reverse=True)
+    if not files:
+        logger.warning("No raw data files found in %s", RAW_DIR)
+        return []
+    fpath = files[0]
+    try:
+        data = json.loads(fpath.read_text(encoding="utf-8"))
+        items = [
+            RawItem(
+                source_type=d["source_type"],
+                title=d["title"],
+                url=d["url"],
+                content=d["content"],
+                collected_at=d.get("collected_at", ""),
+                metadata=d.get("metadata", {}),
+            )
+            for d in data
+        ]
+        logger.info("Loaded raw data: %s (%d items)", fpath.name, len(items))
+        return items
+    except (json.JSONDecodeError, KeyError, OSError) as e:
+        logger.error("Failed to load raw data: %s", e)
+        return []
+
+
 def run_pipeline(
     sources: list[str],
     limit: int,
     dry_run: bool = False,
     verbose: bool = False,
+    steps: list[int] | None = None,
 ) -> int:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
 
+    if steps is None:
+        steps = [1, 2, 3, 4]
+
     raw_items: list[RawItem] = []
 
-    if "github" in sources:
-        raw_items.extend(collect_github(limit))
-    if "rss" in sources:
-        raw_items.extend(collect_rss(limit))
+    if 1 in steps:
+        if "github" in sources:
+            raw_items.extend(collect_github(limit))
+        if "rss" in sources:
+            raw_items.extend(collect_rss(limit))
+        raw_items = raw_items[:limit]
+        logger.info("Total collected: %d items", len(raw_items))
+    else:
+        raw_items = _load_latest_raw()
 
     if not raw_items:
         logger.warning("No items collected from any source.")
         return 0
 
-    raw_items = raw_items[:limit]
-    logger.info("Total collected: %d items", len(raw_items))
+    if 2 in steps:
+        saved = _save_raw(raw_items)
+        logger.info("Step 2 complete: saved %d raw items", saved)
+        if steps == [1, 2]:
+            return 0
 
     if dry_run:
         logger.info("DRY RUN — skipping analysis and save.")
@@ -568,29 +632,49 @@ def run_pipeline(
             logger.info("  Would analyze: %s (%s)", item.title[:60], item.url[:60])
         return 0
 
-    logger.info("Starting LLM analysis for %d items...", len(raw_items))
-    try:
-        provider = create_provider()
-    except ValueError as e:
-        logger.error("Failed to create LLM provider: %s", e)
-        return 1
-
     analyzed: list[AnalyzedArticle | None] = []
-    for i, item in enumerate(raw_items):
-        article = analyze_item(item, provider, len(raw_items), i)
-        analyzed.append(article)
 
-    articles = organize(raw_items, analyzed)
+    if 3 in steps:
+        logger.info("Starting LLM analysis for %d items...", len(raw_items))
+        try:
+            provider = create_provider()
+        except ValueError as e:
+            logger.error("Failed to create LLM provider: %s", e)
+            return 1
 
-    if not articles:
-        logger.warning("No new articles to save (all duplicates?).")
-        return 0
+        for i, item in enumerate(raw_items):
+            article = analyze_item(item, provider, len(raw_items), i)
+            analyzed.append(article)
 
-    saved = save_articles(articles)
-    logger.info(
-        "Pipeline complete: collected=%d, analyzed=%d, saved=%d",
-        len(raw_items), len(articles), saved,
-    )
+        logger.info("Step 3 complete: analyzed %d items", len(analyzed))
+        if steps == [3]:
+            return 0
+
+    if 4 in steps:
+        if not analyzed:
+            for item in raw_items:
+                analyzed.append(AnalyzedArticle(
+                    title=item.title,
+                    source_url=item.url,
+                    source_type=item.source_type,
+                    summary=item.content,
+                    status="draft",
+                    collected_at=item.collected_at,
+                    raw_content=item.content,
+                ))
+
+        articles = organize(raw_items, analyzed)
+
+        if not articles:
+            logger.warning("No new articles to save (all duplicates?).")
+            return 0
+
+        saved = save_articles(articles)
+        logger.info(
+            "Step 4 complete: collected=%d, analyzed=%d, saved=%d",
+            len(raw_items), len(articles), saved,
+        )
+
     return 0
 
 
@@ -613,6 +697,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         type=int,
         default=20,
         help="Max items to collect (default: 20)",
+    )
+    parser.add_argument(
+        "--steps",
+        default="",
+        help='Comma-separated step numbers (e.g. "1,2" or "3,4"; default: all)',
     )
     parser.add_argument(
         "--dry-run",
@@ -643,9 +732,21 @@ def main(argv: list[str] | None = None) -> None:
             logger.error("Unknown source: %s (use github or rss)", s)
             sys.exit(1)
 
+    steps = None
+    if args.steps:
+        try:
+            steps = [int(s.strip()) for s in args.steps.split(",") if s.strip()]
+            for s in steps:
+                if s not in (1, 2, 3, 4):
+                    logger.error("Invalid step: %d (use 1-4)", s)
+                    sys.exit(1)
+        except ValueError:
+            logger.error("Invalid --steps format, use comma-separated numbers (e.g. '1,2')")
+            sys.exit(1)
+
     logger.info(
-        "Pipeline: sources=%s limit=%d dry_run=%s",
-        sources, args.limit, args.dry_run,
+        "Pipeline: sources=%s limit=%d steps=%s dry_run=%s",
+        sources, args.limit, steps or "all", args.dry_run,
     )
 
     exit_code = run_pipeline(
@@ -653,6 +754,7 @@ def main(argv: list[str] | None = None) -> None:
         limit=args.limit,
         dry_run=args.dry_run,
         verbose=args.verbose,
+        steps=steps,
     )
     sys.exit(exit_code)
 
