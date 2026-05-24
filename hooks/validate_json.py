@@ -22,7 +22,7 @@ REQUIRED_FIELDS: dict[str, type] = {
 }
 
 VALID_STATUSES = {"draft", "review", "published", "archived"}
-ID_PATTERN = re.compile(r"^[a-z][a-z0-9_]*-\d{8}-\d{3}$")
+ID_PATTERN = re.compile(r"^\d{8}(?:-[a-z]{2})?-\d{3}$")
 URL_PATTERN = re.compile(r"^https?://")
 VALID_AUDIENCES = {"beginner", "intermediate", "advanced"}
 SUMMARY_MIN_LENGTH = 20
@@ -56,8 +56,8 @@ def validate_entry(entry: dict, filepath: str) -> list[str]:
         if not ID_PATTERN.match(entry["id"]):
             errors.append(
                 f"  invalid id format: '{entry['id']}' "
-                f"(expected {{source}}-{{YYYYMMDD}}-{{NNN}}, "
-                f"e.g. github-20260317-001)"
+                f"(expected {{YYYYMMDD}}-[{{prefix}}]-{{NNN}}, "
+                f"e.g. 20260524-gh-013)"
             )
 
     if "status" in entry and isinstance(entry.get("status"), str):

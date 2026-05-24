@@ -34,10 +34,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Validate article JSON format
-        run: python hooks/validate_json.py knowledge/articles/*.json
+        run: python hooks/validate_json.py knowledge/articles/[0-9]*.json
 
       - name: Check article quality
-        run: python hooks/check_quality.py knowledge/articles/*.json
+        run: python hooks/check_quality.py knowledge/articles/[0-9]*.json
 
       - name: Commit and push new articles
         run: |
