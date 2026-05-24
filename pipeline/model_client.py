@@ -450,6 +450,47 @@ def _get_provider_name(provider: LLMProvider) -> str:
     return "deepseek"
 
 
+def chat(
+    prompt: str,
+    system: str | None = None,
+    provider: LLMProvider | None = None,
+    **kwargs: Any,
+) -> dict[str, Any]:
+    """Send a one-shot chat prompt and return a dict with content and usage.
+
+    A convenience wrapper around chat_with_retry that returns a plain dict
+    instead of an LLMResponse object, suitable for quick scripting.
+
+    Args:
+        prompt: The user prompt string.
+        system: Optional system prompt string.
+        provider: An LLMProvider instance. If None, created via
+            create_provider().
+        **kwargs: Additional parameters (temperature, max_tokens, etc.).
+
+    Returns:
+        A dict with keys "content" (str), "usage" (Usage), and "provider" (str).
+
+    Example:
+        >>> result = chat("Hello")
+        >>> print(result["content"])
+    """
+    if provider is None:
+        provider = create_provider()
+
+    messages: list[dict[str, str]] = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
+
+    response = chat_with_retry(provider, messages, **kwargs)
+    return {
+        "content": response.content,
+        "usage": response.usage,
+        "provider": _get_provider_name(provider),
+    }
+
+
 def quick_chat(
     prompt: str,
     system: str | None = None,
