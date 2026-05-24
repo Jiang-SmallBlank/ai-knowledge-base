@@ -7,8 +7,10 @@ Usage:
     print(response)
 """
 
+import json
 import logging
 import os
+import re
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -452,11 +454,8 @@ def chat(
     system: str | None = None,
     provider: LLMProvider | None = None,
     **kwargs: Any,
-) -> dict[str, Any]:
-    """Send a one-shot chat prompt and return a dict with content and usage.
-
-    A convenience wrapper around chat_with_retry that returns a plain dict
-    instead of an LLMResponse object, suitable for quick scripting.
+) -> tuple[str, Usage]:
+    """Send a one-shot chat prompt and return (text, usage) tuple.
 
     Args:
         prompt: The user prompt string.
@@ -466,11 +465,10 @@ def chat(
         **kwargs: Additional parameters (temperature, max_tokens, etc.).
 
     Returns:
-        A dict with keys "content" (str), "usage" (Usage), and "provider" (str).
+        A tuple of (response_text, usage).
 
     Example:
-        >>> result = chat("Hello")
-        >>> print(result["content"])
+        >>> text, usage = chat("Hello")
     """
     if provider is None:
         provider = create_provider()
@@ -481,11 +479,48 @@ def chat(
     messages.append({"role": "user", "content": prompt})
 
     response = chat_with_retry(provider, messages, **kwargs)
-    return {
-        "content": response.content,
-        "usage": response.usage,
-        "provider": _get_provider_name(provider),
-    }
+    return response.content, response.usage
+
+
+def chat_json(
+    prompt: str,
+    system: str | None = None,
+    provider: LLMProvider | None = None,
+    **kwargs: Any,
+) -> tuple[dict[str, Any], Usage]:
+    """Send a one-shot chat prompt and parse the response as JSON.
+
+    Strips markdown code fences and trailing commas before parsing.
+
+    Args:
+        prompt: The user prompt string.
+        system: Optional system prompt string.
+        provider: An LLMProvider instance. If None, created via
+            create_provider().
+        **kwargs: Additional parameters (temperature, max_tokens, etc.).
+
+    Returns:
+        A tuple of (parsed_json_dict, usage).
+
+    Raises:
+        json.JSONDecodeError: If the response cannot be parsed as JSON.
+    """
+    text, usage = chat(prompt, system, provider, **kwargs)
+    text = text.strip()
+
+    m = re.search(r"```(?:json)?\s*\n(.*?)```", text, re.DOTALL)
+    if m:
+        text = m.group(1).strip()
+
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end > start:
+        text = text[start:end + 1]
+
+    text = re.sub(r",\s*}", "}", text)
+    text = re.sub(r",\s*\]", "]", text)
+
+    return json.loads(text), usage
 
 
 def quick_chat(
