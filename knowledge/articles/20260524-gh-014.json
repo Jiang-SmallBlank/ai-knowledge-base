@@ -1,27 +1,28 @@
 {
   "id": "20260524-gh-014",
-  "title": "n8n-io/n8n",
-  "source_url": "https://github.com/n8n-io/n8n",
+  "title": "huggingface/transformers",
+  "source_url": "https://github.com/huggingface/transformers",
   "source_type": "github",
-  "summary": "n8n：具有原生AI能力的低代码工作流自动化平台",
+  "summary": "Hugging Face Transformers：支持文本、视觉、音频和多模态的SOTA模型框架",
   "tags": [
-    "workflow",
-    "automation",
-    "ai"
+    "framework",
+    "llm",
+    "python",
+    "open-source"
   ],
   "status": "draft",
-  "collected_at": "2026-05-24T09:27:46Z",
-  "analyzed_at": "2026-05-24T09:28:11Z",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:10Z",
   "published_at": null,
-  "raw_content": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. (stars: 189,463 | lang: TypeScript | topics: ai, apis, automation, cli, data-flow, development, integration-framework, integrations, ipaas, low-code, low-code-platform, mcp, mcp-client, mcp-server, n8n, no-code, self-hosted, typescript, workflow, workflow-automation)",
+  "raw_content": "huggingface/transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.  (stars: 160,920 | lang: Python | topics: audio, deep-learning, deepseek, gemma, glm, hacktoberfest, llm, machine-learning, model-hub, natural-language-processing, nlp, pretrained-models, python, pytorch, pytorch-transformers, qwen, speech-recognition, transformer, vlm)",
   "analysis": {
-    "relevance_score": 9,
+    "relevance_score": 10,
     "key_points": [
-      "Fair-code许可，支持自托管和云部署",
-      "400+集成，结合可视化构建与自定义代码",
-      "原生AI能力，支持MCP协议"
+      "支持文本、视觉、音频和多模态的SOTA模型训练与推理",
+      "集成DeepSeek、Gemma、GLM、Qwen等主流模型",
+      "基于PyTorch，拥有16万+星标和活跃社区"
     ],
-    "impact": "n8n作为低代码工作流自动化平台，凭借其原生AI集成和MCP支持，正在重塑企业自动化与AI工作流的构建方式。",
-    "category": "application"
+    "impact": "作为最广泛使用的模型框架，持续推动AI模型标准化和民主化，对研究和工业界均有深远影响",
+    "category": "framework"
   }
 }

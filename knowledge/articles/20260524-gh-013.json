@@ -1,27 +1,26 @@
 {
   "id": "20260524-gh-013",
-  "title": "tensorflow/tensorflow",
-  "source_url": "https://github.com/tensorflow/tensorflow",
+  "title": "f/prompts.chat",
+  "source_url": "https://github.com/f/prompts.chat",
   "source_type": "github",
-  "summary": "TensorFlow开源机器学习框架，支持分布式深度学习",
+  "summary": "社区驱动的ChatGPT提示词共享与发现平台",
   "tags": [
-    "framework",
-    "python",
-    "open-source"
+    "open-source",
+    "llm"
   ],
   "status": "draft",
-  "collected_at": "2026-05-24T09:27:46Z",
-  "analyzed_at": "2026-05-24T09:28:07Z",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:08Z",
   "published_at": null,
-  "raw_content": "tensorflow/tensorflow: An Open Source Machine Learning Framework for Everyone (stars: 195,253 | lang: C++ | topics: deep-learning, deep-neural-networks, distributed, machine-learning, ml, neural-network, python, tensorflow)",
+  "raw_content": "f/prompts.chat: f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy. (stars: 162,743 | lang: HTML | topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, claude, gemini, gpt, gpt-4, llm, machine-learning, nextjs, open-source, openai, prompt-engineering, prompts, prompts-chat, typescript)",
   "analysis": {
-    "relevance_score": 9,
+    "relevance_score": 8,
     "key_points": [
-      "面向所有人的开源机器学习框架",
-      "支持分布式深度神经网络训练",
-      "主要使用C++实现，提供Python接口"
+      "拥有162,743颗星标的高人气开源项目",
+      "支持ChatGPT、Claude、Gemini等多模型提示词",
+      "可自托管部署，保障组织数据隐私"
     ],
-    "impact": "作为最主流的深度学习框架之一，TensorFlow持续推动AI研究和工业应用的发展",
-    "category": "framework"
+    "impact": "作为最大的开源提示词社区之一，它显著降低了LLM使用门槛，推动了提示工程知识的民主化传播。",
+    "category": "application"
   }
 }

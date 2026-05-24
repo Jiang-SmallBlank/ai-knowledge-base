@@ -1,28 +1,25 @@
 {
   "id": "20260524-gh-015",
-  "title": "Significant-Gravitas/AutoGPT",
-  "source_url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "title": "Snailclimb/JavaGuide",
+  "source_url": "https://github.com/Snailclimb/JavaGuide",
   "source_type": "github",
-  "summary": "AutoGPT：人人可用的自主AI代理平台",
+  "summary": "Java面试与后端通用指南，覆盖AI应用开发",
   "tags": [
-    "agent",
-    "open-source",
-    "ai",
-    "python"
+    "ai"
   ],
   "status": "draft",
-  "collected_at": "2026-05-24T09:27:46Z",
-  "analyzed_at": "2026-05-24T09:28:13Z",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:12Z",
   "published_at": null,
-  "raw_content": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters. (stars: 184,493 | lang: Python | topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, claude, gpt, llama-api, llm, openai, python)",
+  "raw_content": "Snailclimb/JavaGuide: Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发 (stars: 155,839 | lang: JavaScript | topics: agent, ai, context-engineering, deepseek, interview, java, mcp, mysql, redis, redisson, skills, springai, system-design)",
   "analysis": {
-    "relevance_score": 9,
+    "relevance_score": 8,
     "key_points": [
-      "提供人人可用的自主AI代理工具，支持多种LLM（GPT、Claude、Llama等）",
-      "Python实现，拥有18.4万+星标，是AI代理领域标杆项目",
-      "聚焦自主代理能力，降低AI应用开发门槛"
+      "覆盖计算机基础、数据库、分布式、高并发等面试知识点",
+      "包含AI应用开发、DeepSeek、MCP等前沿技术内容",
+      "155k+星标，社区活跃度极高"
     ],
-    "impact": "作为最知名的自主AI代理项目之一，AutoGPT推动了AI代理的民主化，使开发者能快速构建和部署智能代理。",
-    "category": "framework"
+    "impact": "为Java后端开发者提供全面的面试与学习资源，并融入AI应用开发内容，对技术社区有重要参考价值。",
+    "category": "tutorial"
   }
 }

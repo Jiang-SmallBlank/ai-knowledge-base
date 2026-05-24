@@ -1,0 +1,27 @@
+{
+  "id": "20260524-gh-018",
+  "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+  "source_url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+  "source_type": "github",
+  "summary": "收集AI工具系统提示词和模型的仓库",
+  "tags": [
+    "open-source",
+    "ai",
+    "tooling"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:24Z",
+  "published_at": null,
+  "raw_content": "x1xhlol/system-prompts-and-models-of-ai-tools: FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models (stars: 138,175 | lang:  | topics: ai, bolt, cluely, copilot, cursor, cursorai, devin, github-copilot, lovable, open-source, perplexity, replit, system-prompts, trae, trae-ai, trae-ide, v0, vscode, windsurf, windsurf-ai)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "收录了超过25种AI工具的系统提示词和内部模型信息",
+      "包含Cursor、Devin、Replit等主流AI编码工具",
+      "开源项目，获得13.8万星标，社区关注度极高"
+    ],
+    "impact": "为AI工具逆向工程和提示词工程研究提供了宝贵的开源资源库，有助于理解商业AI产品的内部机制。",
+    "category": "tooling"
+  }
+}

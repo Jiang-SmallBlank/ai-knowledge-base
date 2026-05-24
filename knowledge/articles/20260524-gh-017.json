@@ -1,0 +1,27 @@
+{
+  "id": "20260524-gh-017",
+  "title": "anthropics/skills",
+  "source_url": "https://github.com/anthropics/skills",
+  "source_type": "github",
+  "summary": "Anthropic发布Agent Skills公共仓库",
+  "tags": [
+    "agent",
+    "open-source",
+    "python"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:20Z",
+  "published_at": null,
+  "raw_content": "anthropics/skills: Public repository for Agent Skills (stars: 139,954 | lang: Python | topics: agent-skills)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "Anthropic官方发布的Agent Skills公共仓库",
+      "Python语言实现，获得近14万星标",
+      "专注于智能体技能的开源项目"
+    ],
+    "impact": "Anthropic官方推出的Agent Skills仓库将加速智能体技能生态发展，为AI Agent开发提供标准化技能组件。",
+    "category": "framework"
+  }
+}

@@ -1,27 +1,25 @@
 {
   "id": "20260524-gh-016",
-  "title": "AUTOMATIC1111/stable-diffusion-webui",
-  "source_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "title": "multica-ai/andrej-karpathy-skills",
+  "source_url": "https://github.com/multica-ai/andrej-karpathy-skills",
   "source_type": "github",
-  "summary": "Stable Diffusion WebUI：最流行的图像生成工具",
+  "summary": "基于Karpathy观察的Claude Code行为优化配置",
   "tags": [
-    "ai",
-    "application",
-    "python"
+    "coding-agent"
   ],
   "status": "draft",
-  "collected_at": "2026-05-24T09:27:46Z",
-  "analyzed_at": "2026-05-24T09:28:22Z",
+  "collected_at": "2026-05-24T10:13:47Z",
+  "analyzed_at": "2026-05-24T10:14:14Z",
   "published_at": null,
-  "raw_content": "AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI (stars: 163,252 | lang: Python | topics: ai, ai-art, deep-learning, diffusion, gradio, image-generation, image2image, img2img, pytorch, stable-diffusion, text2image, torch, txt2img, unstable, upscaling, web)",
+  "raw_content": "multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. (stars: 150,607 | lang:  | topics: )",
   "analysis": {
-    "relevance_score": 9,
+    "relevance_score": 8,
     "key_points": [
-      "基于Gradio的Stable Diffusion图形界面，支持文生图、图生图、超分辨率等功能",
-      "GitHub星标超16万，Python语言开发，社区最活跃的AI图像生成项目之一",
-      "集成PyTorch和深度学习技术，提供丰富的扩展生态和自定义选项"
+      "单个CLAUDE.md文件即可改善Claude Code行为",
+      "基于Andrej Karpathy对LLM编码陷阱的观察",
+      "获得超过15万星标，社区认可度高"
     ],
-    "impact": "作为Stable Diffusion生态中最广泛使用的Web界面，极大降低了AI图像生成的使用门槛，推动了AI艺术创作的普及。",
-    "category": "application"
+    "impact": "提供了一种轻量级、高影响力的LLM编码行为优化方案，可能显著提升AI辅助编程的质量和可靠性。",
+    "category": "tooling"
   }
 }
