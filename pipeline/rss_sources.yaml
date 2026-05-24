@@ -1,0 +1,81 @@
+sources:
+  # ─────────────────────────────────────────────────────────
+  # 综合技术
+  # ─────────────────────────────────────────────────────────
+  - name: HN AI Related
+    url: https://hnrss.org/frontpage?q=AI+OR+LLM+OR+Agent+OR+GPT+OR+language+model+OR+人工智能+OR+LLaMA+OR+ChatGPT+OR+DeepSeek+OR+Claude+OR+Gemini+OR+OpenAI
+    category: general-tech
+    enabled: true
+
+  - name: Lobsters AI/ML
+    url: https://lobste.rs/tags/ml.json
+    category: general-tech
+    enabled: true
+
+  # ─────────────────────────────────────────────────────────
+  # AI 研究
+  # ─────────────────────────────────────────────────────────
+  - name: arXiv cs.AI
+    url: https://rss.arxiv.org/rss/cs.AI
+    category: ai-research
+    enabled: false
+    reason: "每天数百篇论文，量太大，按需启用"
+
+  # ─────────────────────────────────────────────────────────
+  # 公司博客
+  # ─────────────────────────────────────────────────────────
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss/
+    category: company-blog
+    enabled: true
+
+  - name: Anthropic Research
+    url: https://www.anthropic.com/research/rss
+    category: company-blog
+    enabled: true
+
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    category: company-blog
+    enabled: true
+
+  # ─────────────────────────────────────────────────────────
+  # Reddit 社区
+  # ─────────────────────────────────────────────────────────
+  - name: Reddit r/MachineLearning
+    url: https://www.reddit.com/r/MachineLearning/hot.rss
+    category: research
+    enabled: true
+
+  - name: Reddit r/LocalLLaMA
+    url: https://www.reddit.com/r/LocalLLaMA/hot.rss
+    category: open-source
+    enabled: true
+
+  # ─────────────────────────────────────────────────────────
+  # 行业媒体
+  # ─────────────────────────────────────────────────────────
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    category: industry
+    enabled: true
+
+  - name: The Verge (AI)
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    category: news
+    enabled: true
+
+  # ─────────────────────────────────────────────────────────
+  # 中文社区（默认 disabled，需确认 RSS 可用性）
+  # ─────────────────────────────────────────────────────────
+  - name: 机器之心
+    url: https://www.jiqizhixin.com/rss
+    category: chinese-community
+    enabled: false
+    reason: "RSS 可用性待确认"
+
+  - name: 量子位
+    url: https://www.qbitai.com/feed
+    category: chinese-community
+    enabled: false
+    reason: "RSS 可用性待确认"
