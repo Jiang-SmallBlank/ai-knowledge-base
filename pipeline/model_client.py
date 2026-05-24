@@ -49,6 +49,100 @@ class LLMResponse:
     model: str = ""
 
 
+class CostTracker:
+    """Track token usage and cost across LLM API calls.
+
+    Supports per-provider aggregation and summary reporting.
+    Prices are in CNY (元) per million tokens.
+
+    Attributes:
+        _records: List of recorded API call dicts.
+    """
+
+    def __init__(self) -> None:
+        """Initialize an empty CostTracker."""
+        self._records: list[dict[str, Any]] = []
+
+    def record(self, usage: Usage, provider: str) -> None:
+        """Record one API call's token usage and calculated cost.
+
+        Args:
+            usage: Token usage statistics from the API response.
+            provider: Provider name (e.g. 'deepseek', 'qwen', 'openai').
+        """
+        cost = calculate_cost(usage, provider)
+        self._records.append({
+            "provider": provider,
+            "prompt_tokens": usage.prompt_tokens,
+            "completion_tokens": usage.completion_tokens,
+            "total_tokens": usage.total_tokens,
+            "cost": cost,
+        })
+
+    def estimated_cost(self, provider: str | None = None) -> float:
+        """Return total estimated cost in CNY.
+
+        Args:
+            provider: If set, only sum cost for this provider.
+
+        Returns:
+            Total cost in yuan, rounded to 6 decimal places.
+        """
+        if provider:
+            return round(sum(r["cost"] for r in self._records if r["provider"] == provider), 6)
+        return round(sum(r["cost"] for r in self._records), 6)
+
+    def report(self, provider: str | None = None) -> None:
+        """Print a cost summary to the logger.
+
+        Logs a breakdown of calls, tokens, and cost per provider,
+        plus a total line at the end.
+
+        Args:
+            provider: If set, only show summary for this provider.
+        """
+        records = self._records
+        if provider:
+            records = [r for r in records if r["provider"] == provider]
+
+        if not records:
+            logger.info("CostTracker: no records to report.")
+            return
+
+        by_provider: dict[str, dict[str, Any]] = {}
+        for r in records:
+            p = r["provider"]
+            if p not in by_provider:
+                by_provider[p] = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "cost": 0.0}
+            by_provider[p]["calls"] += 1
+            by_provider[p]["prompt_tokens"] += r["prompt_tokens"]
+            by_provider[p]["completion_tokens"] += r["completion_tokens"]
+            by_provider[p]["cost"] += r["cost"]
+
+        for p, summary in by_provider.items():
+            logger.info(
+                "[CostTracker] %s: %d call(s), %d prompt + %d completion = %d tokens, cost ¥%.4f",
+                p,
+                summary["calls"],
+                summary["prompt_tokens"],
+                summary["completion_tokens"],
+                summary["prompt_tokens"] + summary["completion_tokens"],
+                summary["cost"],
+            )
+
+        if len(by_provider) > 1:
+            total_cost = sum(s["cost"] for s in by_provider.values())
+            total_calls = sum(s["calls"] for s in by_provider.values())
+            total_tokens = sum(s["prompt_tokens"] + s["completion_tokens"] for s in by_provider.values())
+            logger.info(
+                "[CostTracker] TOTAL: %d call(s), %d tokens, cost ¥%.4f",
+                total_calls, total_tokens, total_cost,
+            )
+
+
+tracker = CostTracker()
+
+
 PROVIDER_CONFIGS: dict[str, dict[str, str]] = {
     "deepseek": {
         "base_url": "https://api.deepseek.com/v1",
@@ -68,9 +162,9 @@ PROVIDER_CONFIGS: dict[str, dict[str, str]] = {
 }
 
 PRICING: dict[str, dict[str, float]] = {
-    "deepseek": {"input": 0.27, "output": 1.10},
-    "qwen": {"input": 0.35, "output": 1.20},
-    "openai": {"input": 0.15, "output": 0.60},
+    "deepseek": {"input": 1, "output": 2},
+    "qwen": {"input": 4, "output": 12},
+    "openai": {"input": 150, "output": 600},
 }
 
 RETRYABLE_STATUSES: set[int] = {429, 500, 502, 503, 504}
@@ -280,7 +374,9 @@ def chat_with_retry(
 
     for attempt in range(max_retries):
         try:
-            return provider.chat(messages, **kwargs)
+            response = provider.chat(messages, **kwargs)
+            tracker.record(response.usage, _get_provider_name(provider))
+            return response
         except httpx.HTTPStatusError as e:
             if e.response.status_code == 401:
                 raise
@@ -330,14 +426,16 @@ def calculate_cost(
     usage: Usage,
     provider_name: str = "deepseek",
 ) -> float:
-    """Calculate the cost of an API call in USD.
+    """Calculate the cost of an API call in CNY (元).
+
+    Uses the PRICING table (元/百万 tokens) for calculation.
 
     Args:
         usage: Token usage statistics.
         provider_name: Provider name for pricing lookup.
 
     Returns:
-        Cost in USD.
+        Cost in yuan, rounded to 6 decimal places.
     """
     pricing = PRICING.get(provider_name, PRICING["deepseek"])
     input_cost = usage.prompt_tokens / 1_000_000 * pricing["input"]
@@ -430,18 +528,8 @@ def main() -> None:
         return
 
     logger.info("Response: %s", response.content)
-    logger.info(
-        "Usage: %d prompt + %d completion = %d tokens",
-        response.usage.prompt_tokens,
-        response.usage.completion_tokens,
-        response.usage.total_tokens,
-    )
 
-    cost = calculate_cost(response.usage, provider_name)
-    logger.info("Cost: $%.6f", cost)
-
-    estimated = estimate_tokens(response.content)
-    logger.info("Estimated tokens in response: %d", estimated)
+    tracker.report()
 
     provider.close()
 
