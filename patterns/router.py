@@ -138,45 +138,64 @@ def _handle_github_search(query: str) -> str:
     return "\n".join(lines)
 
 
-def _load_knowledge_index() -> list[dict[str, Any]]:
-    """Load knowledge articles from the index file."""
-    index_path = Path("knowledge/articles/index.json")
-    if not index_path.exists():
+def _load_all_articles() -> list[dict[str, Any]]:
+    """Load all individual article JSON files from knowledge/articles/."""
+    articles_dir = Path("knowledge/articles")
+    if not articles_dir.is_dir():
         return []
-    try:
-        with open(index_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        if isinstance(data, list):
-            return data
-        if isinstance(data, dict):
-            return [data]
-        return []
-    except (json.JSONDecodeError, OSError):
-        return []
+    articles: list[dict[str, Any]] = []
+    for fpath in sorted(articles_dir.glob("[0-9]*.json")):
+        try:
+            data = json.loads(fpath.read_text(encoding="utf-8"))
+            if isinstance(data, dict):
+                articles.append(data)
+            elif isinstance(data, list):
+                articles.extend(data)
+        except (json.JSONDecodeError, OSError):
+            continue
+    return articles
+
+
+def _extract_keywords(text: str) -> list[str]:
+    """Extract meaningful keywords from a query, dropping common stop words."""
+    stops = {
+        "的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都",
+        "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你",
+        "会", "着", "没有", "看", "好", "自己", "这", "什么", "怎么",
+        "如何", "为什么", "哪个", "哪些", "关于", "搜索", "查找", "找",
+        "最近", "最新", "里", "吗", "啊", "呢", "吧",
+    }
+    tokens = re.findall(r"[a-zA-Z_][a-zA-Z0-9_.]*|[^\s]", text)
+    return [t for t in tokens if t.lower() not in stops and len(t) > 1]
 
 
 def _handle_knowledge_query(query: str) -> str:
-    """Search the local knowledge base index for matching articles."""
-    index = _load_knowledge_index()
-    if not index:
-        return "知识库索引不存在或为空。"
+    """Search all local article JSON files for matching content."""
+    articles = _load_all_articles()
+    if not articles:
+        return "知识库中暂无内容。"
 
-    query_lower = query.lower()
+    keywords = _extract_keywords(query)
+    if not keywords:
+        return "知识库中未找到相关内容。"
+
     results: list[dict[str, Any]] = []
-    for entry in index:
+    for entry in articles:
         title = entry.get("title", "")
         summary = entry.get("summary", "")
         tags = entry.get("tags", [])
         content = entry.get("raw_content", "")
         search_text = f"{title} {summary} {' '.join(tags)} {content}".lower()
-        if query_lower in search_text:
-            results.append(entry)
+        match_count = sum(1 for kw in keywords if kw.lower() in search_text)
+        if match_count > 0:
+            results.append((match_count, entry))
 
     if not results:
         return "知识库中未找到相关内容。"
 
+    results.sort(key=lambda x: -x[0])
     lines: list[str] = [f"知识库匹配结果（共 {len(results)} 条）："]
-    for entry in results[:5]:
+    for score, entry in results[:5]:
         title = entry.get("title", "")
         summary = entry.get("summary", "")[:100]
         tags = entry.get("tags", [])
