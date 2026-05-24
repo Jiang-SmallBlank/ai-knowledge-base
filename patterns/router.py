@@ -22,6 +22,11 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+# Ensure project root is on sys.path for direct script execution
+_project_root = Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 from pipeline.model_client import chat, chat_json
 
 _INTENT_GITHUB_SEARCH = "github_search"
