@@ -21,5 +21,8 @@ build/
 .DS_Store
 Thumbs.db
 
+# Logs
+logs/
+
 # Project specific
 sub-agent-test-log.md
