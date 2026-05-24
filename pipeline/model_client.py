@@ -106,7 +106,7 @@ class CostTracker:
             records = [r for r in records if r["provider"] == provider]
 
         if not records:
-            logger.info("CostTracker: no records to report.")
+            print("[CostTracker] No records to report.")
             return
 
         by_provider: dict[str, dict[str, Any]] = {}
@@ -120,23 +120,20 @@ class CostTracker:
             by_provider[p]["cost"] += r["cost"]
 
         for p, summary in by_provider.items():
-            logger.info(
-                "[CostTracker] %s: %d call(s), %d prompt + %d completion = %d tokens, cost ¥%.4f",
-                p,
-                summary["calls"],
-                summary["prompt_tokens"],
-                summary["completion_tokens"],
-                summary["prompt_tokens"] + summary["completion_tokens"],
-                summary["cost"],
+            total = summary["prompt_tokens"] + summary["completion_tokens"]
+            print(
+                f"[CostTracker] {p}: {summary['calls']} call(s), "
+                f"{summary['prompt_tokens']} prompt + {summary['completion_tokens']} completion = {total} tokens, "
+                f"cost ¥{summary['cost']:.4f}"
             )
 
         if len(by_provider) > 1:
             total_cost = sum(s["cost"] for s in by_provider.values())
             total_calls = sum(s["calls"] for s in by_provider.values())
             total_tokens = sum(s["prompt_tokens"] + s["completion_tokens"] for s in by_provider.values())
-            logger.info(
-                "[CostTracker] TOTAL: %d call(s), %d tokens, cost ¥%.4f",
-                total_calls, total_tokens, total_cost,
+            print(
+                f"[CostTracker] TOTAL: {total_calls} call(s), {total_tokens} tokens, "
+                f"cost ¥{total_cost:.4f}"
             )
 
 
