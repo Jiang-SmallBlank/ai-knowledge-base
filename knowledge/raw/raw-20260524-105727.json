@@ -1,0 +1,55 @@
+[
+  {
+    "source_type": "github",
+    "title": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "content": "openclaw/openclaw: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞  (stars: 374,288 | lang: TypeScript | topics: ai, assistant, crustacean, molty, openclaw, own-your-data, personal)",
+    "collected_at": "2026-05-24T10:57:24Z",
+    "metadata": {
+      "stars": 374288,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ]
+    }
+  },
+  {
+    "source_type": "github",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "content": "obra/superpowers: An agentic skills framework & software development methodology that works. (stars: 204,438 | lang: Shell | topics: )",
+    "collected_at": "2026-05-24T10:57:24Z",
+    "metadata": {
+      "stars": 204438,
+      "language": "Shell",
+      "topics": []
+    }
+  },
+  {
+    "source_type": "github",
+    "title": "tensorflow/tensorflow",
+    "url": "https://github.com/tensorflow/tensorflow",
+    "content": "tensorflow/tensorflow: An Open Source Machine Learning Framework for Everyone (stars: 195,253 | lang: C++ | topics: deep-learning, deep-neural-networks, distributed, machine-learning, ml, neural-network, python, tensorflow)",
+    "collected_at": "2026-05-24T10:57:24Z",
+    "metadata": {
+      "stars": 195253,
+      "language": "C++",
+      "topics": [
+        "deep-learning",
+        "deep-neural-networks",
+        "distributed",
+        "machine-learning",
+        "ml",
+        "neural-network",
+        "python",
+        "tensorflow"
+      ]
+    }
+  }
+]
