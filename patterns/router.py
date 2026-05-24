@@ -15,6 +15,7 @@ Usage:
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -232,14 +233,13 @@ def route(query: str) -> str:
 # ── Test entry ──
 
 if __name__ == "__main__":
-    test_queries = [
+    queries = sys.argv[1:] if len(sys.argv) > 1 else [
         "find me a rust web framework on github",
         "介绍 Python 是什么",
         "搜索关于 agent 的知识库文章",
     ]
-    for q in test_queries:
+    for q in queries:
         print(f"\n{'=' * 60}")
         print(f"Query: {q}")
         print(f"{'=' * 60}")
-        result = route(q)
-        print(result)
+        print(route(q))
