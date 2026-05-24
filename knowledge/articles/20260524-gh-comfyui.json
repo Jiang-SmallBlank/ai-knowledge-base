@@ -1,0 +1,28 @@
+{
+  "id": "20260524-022",
+  "title": "Comfy-Org/ComfyUI",
+  "source_url": "https://github.com/Comfy-Org/ComfyUI",
+  "source_type": "github_trending",
+  "summary": "扩散模型节点式 GUI，114K 星标，Stable Diffusion 标准",
+  "tags": [
+    "stable-diffusion",
+    "comfyui",
+    "workflow",
+    "image-generation"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "最强大的扩散模型 GUI，基于节点/图的可视化工作流界面。支持 Stable Diffusion 等模型。值得关注的理由是其活跃的社区和模块化设计。 (⭐ 114,251 | Python | topics: ai, comfyui, stable-diffusion)",
+  "analysis": {
+    "relevance_score": 5,
+    "key_points": [
+      "114,251 stars，基于节点/图的可视化工作流界面",
+      "支持 Stable Diffusion 等扩散模型的模块化编排",
+      "社区生态活跃，大量自定义节点和工作流分享"
+    ],
+    "impact": "图像生成领域地位重要，但与 AI/LLM/Agent 核心领域关联度较低",
+    "category": "tooling"
+  }
+}

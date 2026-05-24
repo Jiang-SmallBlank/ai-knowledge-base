@@ -1,0 +1,19 @@
+{
+  "id": "20260524-010",
+  "title": "supertone-inc/supertonic",
+  "source_url": "https://github.com/supertone-inc/supertonic",
+  "source_type": "github_trending",
+  "summary": "超快速的端侧多语言 TTS 引擎，基于 ONNX 原生运行。支持设备端实时语音合成，提供低延迟、高保真的语音生成能力，无需依赖云端 API。",
+  "tags": ["tts", "on-device", "onnx", "voice-synthesis"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "超快速端侧多语言 TTS（文本转语音）引擎，基于 ONNX 原生运行。支持设备端实时语音合成，低延迟高保真。",
+  "analysis": {
+    "relevance_score": 5,
+    "key_points": ["ONNX 原生端侧运行", "多语言多说话人支持", "低延迟高保真实时合成"],
+    "impact": "端侧 TTS 是 AI 应用的有益补充，但与 AI/LLM/Agent 核心领域关联度一般，偏语音工程方向。为端侧 AI 应用提供高质量语音交互能力，推动 TTS 从云端走向本地，但对 LLM/Agent 核心领域影响有限",
+    "category": "tooling"
+  }
+}

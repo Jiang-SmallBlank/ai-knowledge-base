@@ -1,0 +1,28 @@
+{
+  "id": "20260524-013",
+  "title": "ollama/ollama",
+  "source_url": "https://github.com/ollama/ollama",
+  "source_type": "github_trending",
+  "summary": "本地 LLM 一键运行工具，支持 DeepSeek/Qwen/Gemma 等",
+  "tags": [
+    "llm",
+    "local-ai",
+    "inference",
+    "ollama"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "本地 LLM 运行工具，支持 DeepSeek、GLM、Qwen、Gemma 等多种模型的一键式安装和运行。值得关注的理由是它让每个人都拥有本地大模型的梦想成为现实。 (⭐ 172,154 | Go | topics: llm, ollama, deepseek, qwen, gemma)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "172,154 stars，已支持 DeepSeek、GLM、MiniMax、Qwen 等最新模型",
+      "Go 实现，单二进制部署，极致简洁的用户体验",
+      "将本地 LLM 从高技术门槛操作简化为几乎零配置"
+    ],
+    "impact": "本地 LLM 运行的事实标准，持续跟进最新模型，属于成熟项目的常规迭代但价值巨大",
+    "category": "tooling"
+  }
+}

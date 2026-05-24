@@ -1,0 +1,29 @@
+{
+  "id": "20260524-017",
+  "title": "langgenius/dify",
+  "source_url": "https://github.com/langgenius/dify",
+  "source_type": "github_trending",
+  "summary": "生产级 AI 应用开发平台，Agent/RAG/MCP 全链路，142K",
+  "tags": [
+    "ai-platform",
+    "agent",
+    "rag",
+    "mcp",
+    "workflow"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "生产级 AI 应用开发平台，支持 Agent 编排、RAG 管道、MCP 协议集成等。值得关注的理由是从原型到生产的全链路覆盖能力。 (⭐ 142,414 | TypeScript | topics: ai, agent, agentic-workflow, llm, rag, mcp)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "142,414 stars，从原型到生产的全链路 AI 应用开发",
+      "支持 Agent 编排、RAG 管道、MCP 协议集成、多模型管理",
+      "低代码 + 可编程混合模式，适配不同技术水平的团队"
+    ],
+    "impact": "生产级 AI 平台的标杆，全链路覆盖能力在同类产品中领先，MCP 集成紧跟生态",
+    "category": "tooling"
+  }
+}

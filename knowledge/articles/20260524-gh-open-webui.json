@@ -1,0 +1,28 @@
+{
+  "id": "20260524-018",
+  "title": "open-webui/open-webui",
+  "source_url": "https://github.com/open-webui/open-webui",
+  "source_type": "github_trending",
+  "summary": "AI 交互界面，支持 Ollama/OpenAI，138K 星标",
+  "tags": [
+    "llm-ui",
+    "ollama",
+    "self-hosted",
+    "webui"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "用户友好的 AI 交互界面，支持 Ollama 和 OpenAI API，提供聊天、RAG、MCP 等开箱即用功能。值得关注的理由是极简部署和完善的功能集成。 (⭐ 138,406 | Python | topics: ai, llm, ollama, rag, mcp, openai)",
+  "analysis": {
+    "relevance_score": 6,
+    "key_points": [
+      "138,406 stars，极简部署，Python 实现",
+      "开箱即用支持聊天、RAG、MCP、多模型切换",
+      "自托管 AI 界面的首选方案"
+    ],
+    "impact": "优秀的 AI 前端界面，偏工具性质，技术深度和创新性有限",
+    "category": "tooling"
+  }
+}

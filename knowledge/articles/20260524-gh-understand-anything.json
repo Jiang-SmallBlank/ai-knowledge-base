@@ -1,0 +1,19 @@
+{
+  "id": "20260524-003",
+  "title": "Lum1104/Understand-Anything",
+  "source_url": "https://github.com/Lum1104/Understand-Anything",
+  "source_type": "github_trending",
+  "summary": "将任意代码库转化为交互式知识图谱，支持语义搜索和问答。兼容 Claude Code、Cursor、Copilot 等主流 AI 编码工具，帮助开发者快速理解陌生项目结构。",
+  "tags": ["code-understanding", "knowledge-graph", "developer-tools", "code-search"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "将任意代码库转化为交互式知识图谱，支持搜索和问答。兼容 Claude Code、Cursor、Copilot 等多种 AI 编码工具。",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": ["代码库到知识图谱的自动转化", "支持搜索和问答交互", "兼容主流 AI 编码工具"],
+    "impact": "知识图谱+代码理解直接服务于 AI 编码 Agent，提升上下文感知能力，多工具兼容性增强实用性。提升 AI Agent 对大型代码库的理解能力，减少人工阅读时间，可能成为开发者上手新项目的标配工具",
+    "category": "tooling"
+  }
+}

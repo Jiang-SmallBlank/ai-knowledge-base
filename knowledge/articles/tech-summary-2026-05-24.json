@@ -1,0 +1,307 @@
+{
+  "skill": "tech-summary",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "source_file": "github-trending-2026-05-24.json",
+  "items": [
+    {
+      "title": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "summary": "跨平台 AI 个人助手，开源、隐私优先，374K 星标",
+      "highlights": [
+        "374,262 stars 证明其是社区最受欢迎的 AI 助手项目之一",
+        "跨平台全端覆盖（桌面/移动/终端），TypeScript 实现",
+        "「龙虾之道」设计哲学强调隐私和自主权，开源无锁定"
+      ],
+      "relevance_score": 8,
+      "score_reason": "个人 AI 助手的开源标杆，374K stars 反映其影响力，但偏消费级产品而非 Agent 核心技术突破",
+      "tags": [
+        "ai-assistant",
+        "open-source",
+        "cross-platform",
+        "privacy-first"
+      ],
+      "updated": false
+    },
+    {
+      "title": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "AI Agent 集成 Harness，融合技能、记忆、安全、MCP，189K 星标",
+      "highlights": [
+        "189,501 stars，将 Agent 开发所需的技能、本能、记忆、安全集成到统一工作台",
+        "支持 Claude Code、Codex、OpenCode、Cursor 等多 Agent 生态",
+        "集成 MCP 协议，提供可插拔的工具链扩展能力"
+      ],
+      "relevance_score": 9,
+      "score_reason": "重新定义 AI 编码 Agent 开发范式，集成 Harness 模式是 Agent 工程化的关键演进方向，具备改变格局的潜力",
+      "tags": [
+        "agent-harness",
+        "mcp",
+        "coding-agent",
+        "developer-tools"
+      ],
+      "updated": false
+    },
+    {
+      "title": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "summary": "本地 LLM 一键运行工具，支持 DeepSeek/Qwen/Gemma 等",
+      "highlights": [
+        "172,154 stars，已支持 DeepSeek、GLM、MiniMax、Qwen 等最新模型",
+        "Go 实现，单二进制部署，极致简洁的用户体验",
+        "将本地 LLM 从高技术门槛操作简化为几乎零配置"
+      ],
+      "relevance_score": 8,
+      "score_reason": "本地 LLM 运行的事实标准，持续跟进最新模型，属于成熟项目的常规迭代但价值巨大",
+      "tags": [
+        "llm",
+        "local-ai",
+        "inference",
+        "ollama"
+      ],
+      "updated": false
+    },
+    {
+      "title": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "Nous Research 出品自主 AI Agent 框架，164K 星标",
+      "highlights": [
+        "164,872 stars，由知名 AI 研究机构 Nous Research 开发",
+        "支持多 LLM 后端（OpenAI/Anthropic/Local），灵活 Agent 模式",
+        "在 OpenClaw 生态中广泛使用，具备技能系统和工具调用能力"
+      ],
+      "relevance_score": 8,
+      "score_reason": "重要的开源 Agent 框架，模块化设计影响广泛，但 Agent 框架层面未出现范式级突破",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "hermes",
+        "python"
+      ],
+      "updated": false
+    },
+    {
+      "title": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "summary": "开源终端编码 Agent，对标 Claude Code，164K 星标",
+      "highlights": [
+        "164,552 stars，TypeScript 实现的开源编码 Agent",
+        "跨平台支持，为开发者提供终端内 AI 编码能力",
+        "打破了商业编码 Agent（Claude Code）的垄断"
+      ],
+      "relevance_score": 8,
+      "score_reason": "开源编码 Agent 的重要代表，填补了开源生态在终端编码 Agent 领域的空白",
+      "tags": [
+        "coding-agent",
+        "open-source",
+        "cli",
+        "typescript"
+      ],
+      "updated": false
+    },
+    {
+      "title": "langflow-ai/langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "summary": "低代码 AI Agent 可视化编排平台，148K 星标",
+      "highlights": [
+        "148,700 stars，通过拖拽界面编排 LLM Agent 和工作流",
+        "支持 React Flow 可视化，可导出为独立应用",
+        "大大降低了非开发者构建 AI Agent 的技术门槛"
+      ],
+      "relevance_score": 7,
+      "score_reason": "低代码 Agent 构建工具，降低了 AI Agent 开发门槛但并非核心技术突破",
+      "tags": [
+        "low-code",
+        "agent",
+        "workflow",
+        "visual-programming"
+      ],
+      "updated": false
+    },
+    {
+      "title": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "summary": "生产级 AI 应用开发平台，Agent/RAG/MCP 全链路，142K",
+      "highlights": [
+        "142,414 stars，从原型到生产的全链路 AI 应用开发",
+        "支持 Agent 编排、RAG 管道、MCP 协议集成、多模型管理",
+        "低代码 + 可编程混合模式，适配不同技术水平的团队"
+      ],
+      "relevance_score": 8,
+      "score_reason": "生产级 AI 平台的标杆，全链路覆盖能力在同类产品中领先，MCP 集成紧跟生态",
+      "tags": [
+        "ai-platform",
+        "agent",
+        "rag",
+        "mcp",
+        "workflow"
+      ],
+      "updated": false
+    },
+    {
+      "title": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "summary": "AI 交互界面，支持 Ollama/OpenAI，138K 星标",
+      "highlights": [
+        "138,406 stars，极简部署，Python 实现",
+        "开箱即用支持聊天、RAG、MCP、多模型切换",
+        "自托管 AI 界面的首选方案"
+      ],
+      "relevance_score": 6,
+      "score_reason": "优秀的 AI 前端界面，偏工具性质，技术深度和创新性有限",
+      "tags": [
+        "llm-ui",
+        "ollama",
+        "self-hosted",
+        "webui"
+      ],
+      "updated": false
+    },
+    {
+      "title": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "summary": "LLM 应用开发框架标准，Agent/RAG 生态核心，137K 星标",
+      "highlights": [
+        "137,507 stars，业界最广泛使用的 LLM 应用开发框架",
+        "覆盖 Agent、RAG、工具调用、多模型接入等全场景",
+        "LangSmith/LangGraph 等子项目形成完整生态"
+      ],
+      "relevance_score": 8,
+      "score_reason": "LLM 应用开发事实标准，生态深度和广度无可替代，成熟框架持续演进",
+      "tags": [
+        "langchain",
+        "llm",
+        "agent-framework",
+        "rag",
+        "python"
+      ],
+      "updated": false
+    },
+    {
+      "title": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "summary": "Anthropic 官方终端编码 Agent，126K 星标，定义编码新范式",
+      "highlights": [
+        "126,093 stars，Anthropic 官方出品，与 Claude 深度绑定",
+        "深度理解代码库结构，支持自然语言驱动的开发工作流",
+        "Agentic 编码模式正在重新定义开发者与代码的交互方式"
+      ],
+      "relevance_score": 10,
+      "score_reason": "改变格局。重新定义 AI 辅助编码范式，从被动补全进化为主动 Agent 协作，由 Anthropic 官方驱动快速迭代",
+      "tags": [
+        "claude",
+        "coding-agent",
+        "anthropic",
+        "cli"
+      ],
+      "updated": false
+    },
+    {
+      "title": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "summary": "AI Agent 网络数据采集与清洗工具，123K 星标",
+      "highlights": [
+        "123,540 stars，将网页内容转化为干净的 Markdown 格式",
+        "专为 AI Agent 设计，支持搜索、抓取、清洗一体化",
+        "TypeScript 实现，被大量 AI Agent 项目集成"
+      ],
+      "relevance_score": 7,
+      "score_reason": "AI Agent 数据管道的关键基础设施，解决 Agent 获取网络数据的核心痛点",
+      "tags": [
+        "web-scraping",
+        "ai-agent",
+        "data-extraction",
+        "typescript"
+      ],
+      "updated": false
+    },
+    {
+      "title": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "summary": "扩散模型节点式 GUI，114K 星标，Stable Diffusion 标准",
+      "highlights": [
+        "114,251 stars，基于节点/图的可视化工作流界面",
+        "支持 Stable Diffusion 等扩散模型的模块化编排",
+        "社区生态活跃，大量自定义节点和工作流分享"
+      ],
+      "relevance_score": 5,
+      "score_reason": "图像生成领域地位重要，但与 AI/LLM/Agent 核心领域关联度较低",
+      "tags": [
+        "stable-diffusion",
+        "comfyui",
+        "workflow",
+        "image-generation"
+      ],
+      "updated": false
+    },
+    {
+      "title": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "summary": "C/C++ LLM 推理引擎，112K 星标，端侧推理标准",
+      "highlights": [
+        "112,564 stars，纯 C/C++ 实现，极致性能优化",
+        "支持 CPU/GPU 本地推理，量化技术让消费级硬件运行 LLM",
+        "是本地 LLM 推理的底层基础设施"
+      ],
+      "relevance_score": 7,
+      "score_reason": "LLM 推理引擎标杆，持续优化性能，本地 AI 不可或缺的基础设施",
+      "tags": [
+        "llm-inference",
+        "cpp",
+        "on-device",
+        "quantization"
+      ],
+      "updated": false
+    },
+    {
+      "title": "Doorman11991/smallcode",
+      "url": "https://github.com/Doorman11991/smallcode",
+      "summary": "面向小参数模型的编码 Agent，4B 模型达 87% 基准",
+      "highlights": [
+        "专为 8B-35B 小参数模型优化，4B 活跃参数模型可达 87% 基准表现",
+        "创新架构：MarrowScript 认知层、2 阶段工具路由、上下文预算引擎",
+        "适合消费级硬件本地运行，npm 包体积小巧"
+      ],
+      "relevance_score": 7,
+      "score_reason": "验证小模型在编码 Agent 场景的可行性，架构有创新，但项目较新实际影响待观察",
+      "tags": [
+        "small-llm",
+        "coding-agent",
+        "efficiency",
+        "javascript"
+      ],
+      "updated": false
+    },
+    {
+      "title": "lynote-ai/humanize-text",
+      "url": "https://github.com/lynote-ai/humanize-text",
+      "summary": "开源 AI 文本人性化工具，583 星标，绕过 AI 检测",
+      "highlights": [
+        "4 阶段流水线：DeepSeek 中文改写→日文改写→Google 芬兰语→Niutrans 英语",
+        "宣称整体质量评分 9.1/10，5 个示例均通过 AI 检测",
+        "v1.5.1 标准化生产流水线，支持 n8n 集成"
+      ],
+      "relevance_score": 3,
+      "score_reason": "AI 文本人性化属边缘应用，核心竞争力在绕过检测而非推动 AI 技术发展",
+      "tags": [
+        "ai-detection",
+        "humanizer",
+        "text-processing"
+      ],
+      "updated": false
+    }
+  ],
+  "trends": {
+    "common_themes": [
+      "终端编码 Agent 成为主轴：Claude Code、OpenCode、SmallCode、ECC 将 AI 编码从 IDE 插件升级为终端原生 Agent",
+      "AI Agent Harness 化趋势：ECC 等项目将技能、记忆、MCP、安全等模块集成到统一工作台，Agent 开发从脚本走向工程化平台",
+      "本地 AI 基础设施成熟：Ollama + llama.cpp + Open WebUI 形成「本地模型运行→推理加速→用户界面」完整链路",
+      "Agent 编排平台两极分化：低代码（LangFlow/Dify）和代码框架（LangChain）并行发展，覆盖不同技术水平的开发者",
+      "MCP 协议成为标配：集成 MCP 协议已成为 AI 项目的必备功能"
+    ],
+    "emerging_concepts": [
+      "小模型编码 Agent：SmallCode 验证了 4B-8B 模型在编码场景的可行性，开辟消费级硬件运行编码 Agent 新路径",
+      "Agent Harness 集成环境：ECC 将 Agent 的技能、记忆、安全、MCP 整合为统一开发环境，代表 Agent 工程化新方向",
+      "跨 Agent 互操作性：OpenCode、ECC 等开始支持多 Agent 间的 MCP 消息传递和协作"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "20260524-016",
+  "title": "langflow-ai/langflow",
+  "source_url": "https://github.com/langflow-ai/langflow",
+  "source_type": "github_trending",
+  "summary": "低代码 AI Agent 可视化编排平台，148K 星标",
+  "tags": [
+    "low-code",
+    "agent",
+    "workflow",
+    "visual-programming"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "低代码 AI Agent 和工作流构建平台，通过可视化拖拽界面编排 LLM 应用。值得关注的理由是它极大降低了 AI 应用开发的门槛。 (⭐ 148,700 | Python | topics: agents, generative-ai, large-language-models)",
+  "analysis": {
+    "relevance_score": 7,
+    "key_points": [
+      "148,700 stars，通过拖拽界面编排 LLM Agent 和工作流",
+      "支持 React Flow 可视化，可导出为独立应用",
+      "大大降低了非开发者构建 AI Agent 的技术门槛"
+    ],
+    "impact": "低代码 Agent 构建工具，降低了 AI Agent 开发门槛但并非核心技术突破",
+    "category": "tooling"
+  }
+}

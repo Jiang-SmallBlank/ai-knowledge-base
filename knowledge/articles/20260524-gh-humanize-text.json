@@ -1,0 +1,27 @@
+{
+  "id": "20260524-025",
+  "title": "lynote-ai/humanize-text",
+  "source_url": "https://github.com/lynote-ai/humanize-text",
+  "source_type": "github_trending",
+  "summary": "开源 AI 文本人性化工具，583 星标，绕过 AI 检测",
+  "tags": [
+    "ai-detection",
+    "humanizer",
+    "text-processing"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "开源 AI 文本人性化工具，将 AI 生成内容转化为难以检测的人类写作风格。支持绕过 Turnitin、GPTZero 等检测器。值得关注的理由是它回应了 AI 内容检测的刚需。 (⭐ 583 | Python | topics: ai-tools, humanize-text, ai-humanizer)",
+  "analysis": {
+    "relevance_score": 3,
+    "key_points": [
+      "4 阶段流水线：DeepSeek 中文改写→日文改写→Google 芬兰语→Niutrans 英语",
+      "宣称整体质量评分 9.1/10，5 个示例均通过 AI 检测",
+      "v1.5.1 标准化生产流水线，支持 n8n 集成"
+    ],
+    "impact": "AI 文本人性化属边缘应用，核心竞争力在绕过检测而非推动 AI 技术发展",
+    "category": "tooling"
+  }
+}

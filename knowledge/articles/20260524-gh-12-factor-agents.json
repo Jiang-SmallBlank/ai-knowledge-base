@@ -1,0 +1,19 @@
+{
+  "id": "20260524-004",
+  "title": "humanlayer/12-factor-agents",
+  "source_url": "https://github.com/humanlayer/12-factor-agents",
+  "source_type": "github_trending",
+  "summary": "借鉴 12-Factor App 方法论，提出构建生产级 LLM 应用的 12 条原则指南。涵盖可配置性、可观测性、可复用性等架构最佳实践，帮助团队交付可靠的 AI Agent 系统。",
+  "tags": ["best-practices", "llm-app", "agent-architecture", "production"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "构建生产级 LLM 应用的原则指南。借鉴 12-Factor App 方法论，定义构建可靠 AI Agent 的架构最佳实践。",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": ["12 条结构化原则指导 Agent 开发", "聚焦可配置性、可观测性、可靠性", "填补生产级 LLM 应用规范空白"],
+    "impact": "为 LLM 应用提供系统化的工程方法论框架，填补了 Agent 生产化部署的规范空白，类似于 12-Factor App 对云原生的影响。可能成为 LLM 应用开发的行业参考标准，推动 AI Agent 从实验原型走向工程化、可运维的生产系统",
+    "category": "opinion"
+  }
+}

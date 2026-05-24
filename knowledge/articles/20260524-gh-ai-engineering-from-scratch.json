@@ -1,0 +1,19 @@
+{
+  "id": "20260524-009",
+  "title": "rohitg00/ai-engineering-from-scratch",
+  "source_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+  "source_type": "github_trending",
+  "summary": "从零开始学习 AI 工程实践的教程仓库，涵盖学习、构建、交付全链路。帮助开发者系统掌握工程化 AI 应用开发的完整技能栈。",
+  "tags": ["ai-engineering", "tutorial", "full-stack-ai", "learning-path"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "从零学习 AI 工程实践教程，涵盖学习、构建、交付全链路。帮助开发者系统掌握工程化 AI 应用开发技能。",
+  "analysis": {
+    "relevance_score": 6,
+    "key_points": ["全链路 AI 工程实践", "学习+构建+交付全覆盖", "适合系统学习 AI 开发"],
+    "impact": "系统性 AI 工程教程有教育价值，但内容偏教学性质，对已入门的开发者帮助有限。降低 AI 工程化的学习门槛，帮助更多后端开发者转型 AI 工程，但属现有知识的整理而非创新",
+    "category": "tutorial"
+  }
+}

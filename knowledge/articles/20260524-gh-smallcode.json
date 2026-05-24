@@ -1,0 +1,28 @@
+{
+  "id": "20260524-024",
+  "title": "Doorman11991/smallcode",
+  "source_url": "https://github.com/Doorman11991/smallcode",
+  "source_type": "github_trending",
+  "summary": "面向小参数模型的编码 Agent，4B 模型达 87% 基准",
+  "tags": [
+    "small-llm",
+    "coding-agent",
+    "efficiency",
+    "javascript"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "专为小参数模型优化的 AI 编码 Agent，仅用 4B 活跃参数模型即可达 87% 基准表现。值得关注的理由是它验证了小模型在编码场景的高效可行性。 (⭐ 1,349 | JavaScript | topics: N/A)",
+  "analysis": {
+    "relevance_score": 7,
+    "key_points": [
+      "专为 8B-35B 小参数模型优化，4B 活跃参数模型可达 87% 基准表现",
+      "创新架构：MarrowScript 认知层、2 阶段工具路由、上下文预算引擎",
+      "适合消费级硬件本地运行，npm 包体积小巧"
+    ],
+    "impact": "验证小模型在编码 Agent 场景的可行性，架构有创新，但项目较新实际影响待观察",
+    "category": "tooling"
+  }
+}

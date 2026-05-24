@@ -1,0 +1,192 @@
+[
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "obra/superpowers",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_type": "github_trending",
+    "summary": "一套开源的 Agentic 技能框架与软件开发方法论，旨在帮助 AI Agent 高效执行编码任务。内置预置 skill 集合和结构化工作流，为 Agent 提供可复用的行为模板，降低 AI 编程工具的使用门槛。",
+    "tags": ["agent-framework", "coding-agent", "workflow", "skill-system"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "一套 Agentic 技能框架与软件开发方法论，帮助 AI Agent 高效执行编码任务，包含预置 skill 和结构化工作流。",
+    "analysis": {
+      "relevance_score": 9,
+      "relevance_reason": "直接定义 AI Agent 的编码行为规范，204K stars 印证其影响力，是 Agent 编排领域的里程碑式项目",
+      "key_points": ["预置 skill 模板降低 Agent 使用门槛", "结构化工作流提升编码效率", "204K stars 反映社区高度认可"],
+      "impact": "可能成为 AI 编码 Agent 的事实标准框架，推动 Agent 行为从自由摸索走向规范化、可复用的方法论时代",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "tinyhumansai/openhuman",
+    "source_url": "https://github.com/tinyhumansai/openhuman",
+    "source_type": "github_trending",
+    "summary": "一款注重隐私保护的个人 AI 超级智能助手，基于 Rust 构建，追求简洁与性能。提供完全本地化的 AI 交互体验，避免数据外传至云端。",
+    "tags": ["personal-assistant", "privacy", "rust", "on-device"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "个人 AI 超级智能助手，注重隐私保护。基于 Rust 构建，简洁且功能强大，提供本地化 AI 交互体验。",
+    "analysis": {
+      "relevance_score": 7,
+      "relevance_reason": "本地化 AI 助手是 LLM 落地的重要方向，Rust 实现保证了性能，隐私保护契合当前监管趋势",
+      "key_points": ["Rust 构建保证高性能和安全性", "注重隐私保护的本地化方案", "个人 AI 助手的轻量化实现"],
+      "impact": "推动个人 AI 助手向端侧迁移，为隐私敏感用户提供可行的本地化替代方案，可能影响消费级 AI 产品的架构设计",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "Lum1104/Understand-Anything",
+    "source_url": "https://github.com/Lum1104/Understand-Anything",
+    "source_type": "github_trending",
+    "summary": "将任意代码库转化为交互式知识图谱，支持语义搜索和问答。兼容 Claude Code、Cursor、Copilot 等主流 AI 编码工具，帮助开发者快速理解陌生项目结构。",
+    "tags": ["code-understanding", "knowledge-graph", "developer-tools", "code-search"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "将任意代码库转化为交互式知识图谱，支持搜索和问答。兼容 Claude Code、Cursor、Copilot 等多种 AI 编码工具。",
+    "analysis": {
+      "relevance_score": 8,
+      "relevance_reason": "知识图谱+代码理解直接服务于 AI 编码 Agent，提升上下文感知能力，多工具兼容性增强实用性",
+      "key_points": ["代码库到知识图谱的自动转化", "支持搜索和问答交互", "兼容主流 AI 编码工具"],
+      "impact": "提升 AI Agent 对大型代码库的理解能力，减少人工阅读时间，可能成为开发者上手新项目的标配工具",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "humanlayer/12-factor-agents",
+    "source_url": "https://github.com/humanlayer/12-factor-agents",
+    "source_type": "github_trending",
+    "summary": "借鉴 12-Factor App 方法论，提出构建生产级 LLM 应用的 12 条原则指南。涵盖可配置性、可观测性、可复用性等架构最佳实践，帮助团队交付可靠的 AI Agent 系统。",
+    "tags": ["best-practices", "llm-app", "agent-architecture", "production"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "构建生产级 LLM 应用的原则指南。借鉴 12-Factor App 方法论，定义构建可靠 AI Agent 的架构最佳实践。",
+    "analysis": {
+      "relevance_score": 9,
+      "relevance_reason": "为 LLM 应用提供系统化的工程方法论框架，填补了 Agent 生产化部署的规范空白，类似于 12-Factor App 对云原生的影响",
+      "key_points": ["12 条结构化原则指导 Agent 开发", "聚焦可配置性、可观测性、可靠性", "填补生产级 LLM 应用规范空白"],
+      "impact": "可能成为 LLM 应用开发的行业参考标准，推动 AI Agent 从实验原型走向工程化、可运维的生产系统",
+      "category": "opinion"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "colbymchenry/codegraph",
+    "source_url": "https://github.com/colbymchenry/codegraph",
+    "source_type": "github_trending",
+    "summary": "预索引代码知识图谱工具，为 Claude Code、Codex、Cursor、OpenCode 等 AI 编码 Agent 减少 token 消耗和工具调用次数。通过离线索引加速代码理解，降低使用成本。",
+    "tags": ["code-graph", "token-optimization", "coding-agent", "indexing"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "预索引代码知识图谱，为 Claude Code、Codex、Cursor、OpenCode 等 AI 编码 Agent 减少 token 消耗和工具调用次数。",
+    "analysis": {
+      "relevance_score": 8,
+      "relevance_reason": "直接解决 AI 编码 Agent 的 token 开销痛点，预索引策略实用性强，多工具兼容覆盖主流生态",
+      "key_points": ["预索引减少 token 消耗", "降低工具调用次数", "兼容主流 AI 编码 Agent"],
+      "impact": "通过降低 token 成本加速 AI 编码工具的普及，预索引思路可能成为 AI 代码理解的标准预处理步骤",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "Imbad0202/academic-research-skills",
+    "source_url": "https://github.com/Imbad0202/academic-research-skills",
+    "source_type": "github_trending",
+    "summary": "为 Claude Code 设计的学术研究技能集合，覆盖研究到写作、审阅、修订、定稿的全流程。帮助研究人员利用 AI Agent 加速学术产出，形成标准化研究辅助工具链。",
+    "tags": ["academic-research", "claude-code", "research-workflow", "ai-assisted-writing"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "为 Claude Code 设计的学术研究技能集合，覆盖研究→写作→审阅→修订→定稿全流程的 AI 辅助工具链。",
+    "analysis": {
+      "relevance_score": 7,
+      "relevance_reason": "将 AI Agent 引入学术研究全流程是重要应用方向，但仅限 Claude Code 生态，通用性受限",
+      "key_points": ["覆盖科研全流程的 AI 辅助", "标准化研究工具链", "专为 Claude Code 设计"],
+      "impact": "推动 AI Agent 在学术研究领域的落地，可能改变传统科研工作流，加速学术产出效率",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "rohitg00/agentmemory",
+    "source_url": "https://github.com/rohitg00/agentmemory",
+    "source_type": "github_trending",
+    "summary": "AI 编码 Agent 的持久化记忆系统，在真实基准测试中排名第一。帮助 Agent 在跨会话中保持上下文和积累的知识，解决 Agent 的\"记忆丢失\"问题。",
+    "tags": ["agent-memory", "persistence", "context-retention", "benchmark"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "AI 编码 Agent 的持久化记忆系统，基于真实基准测试排名第一。帮助 Agent 在跨会话中保持上下文和知识。",
+    "analysis": {
+      "relevance_score": 9,
+      "relevance_reason": "记忆是 Agent 的核心能力瓶颈，该项目以基准第一的成绩直接解决会话持久化问题，对 Agent 实用化影响深远",
+      "key_points": ["跨会话持久化记忆", "真实基准测试排名第一", "解决 Agent 上下文丢失痛点"],
+      "impact": "可能成为 AI 编码 Agent 的记忆层标准方案，推动 Agent 从单次会话工具进化为具备长期记忆的协作伙伴",
+      "category": "tooling"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "datawhalechina/easy-vibe",
+    "source_url": "https://github.com/datawhalechina/easy-vibe",
+    "source_type": "github_trending",
+    "summary": "面向初学者的 Vibe Coding 现代编程课程（2026 年版），由 Datawhale 社区出品。从零开始逐步引导学习者掌握 AI 辅助编程的完整技能体系。",
+    "tags": ["vibe-coding", "education", "ai-programming", "tutorial"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "面向初学者的 Vibe Coding 现代编程课程，2026 年版。从零开始逐步掌握 AI 辅助编码的完整技能。",
+    "analysis": {
+      "relevance_score": 6,
+      "relevance_reason": "Vibe Coding 教育课程有助于推广 AI 编程理念，但偏入门级，技术深度和创新性有限",
+      "key_points": ["零基础入门 Vibe Coding", "Datawhale 社区出品", "2026 年最新版本"],
+      "impact": "帮助初学者快速进入 AI 辅助编程领域，扩大 AI 编码工具的用户基础，但本身不涉及前沿技术突破",
+      "category": "tutorial"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "rohitg00/ai-engineering-from-scratch",
+    "source_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "source_type": "github_trending",
+    "summary": "从零开始学习 AI 工程实践的教程仓库，涵盖学习、构建、交付全链路。帮助开发者系统掌握工程化 AI 应用开发的完整技能栈。",
+    "tags": ["ai-engineering", "tutorial", "full-stack-ai", "learning-path"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "从零学习 AI 工程实践教程，涵盖学习、构建、交付全链路。帮助开发者系统掌握工程化 AI 应用开发技能。",
+    "analysis": {
+      "relevance_score": 6,
+      "relevance_reason": "系统性 AI 工程教程有教育价值，但内容偏教学性质，对已入门的开发者帮助有限",
+      "key_points": ["全链路 AI 工程实践", "学习+构建+交付全覆盖", "适合系统学习 AI 开发"],
+      "impact": "降低 AI 工程化的学习门槛，帮助更多后端开发者转型 AI 工程，但属现有知识的整理而非创新",
+      "category": "tutorial"
+    }
+  },
+  {
+    "id": "占位符-由整理Agent填充",
+    "title": "supertone-inc/supertonic",
+    "source_url": "https://github.com/supertone-inc/supertonic",
+    "source_type": "github_trending",
+    "summary": "超快速的端侧多语言 TTS 引擎，基于 ONNX 原生运行。支持设备端实时语音合成，提供低延迟、高保真的语音生成能力，无需依赖云端 API。",
+    "tags": ["tts", "on-device", "onnx", "voice-synthesis"],
+    "status": "draft",
+    "collected_at": "2026-05-24T00:00:00Z",
+    "analyzed_at": "2026-05-24T12:00:00Z",
+    "raw_content": "超快速端侧多语言 TTS（文本转语音）引擎，基于 ONNX 原生运行。支持设备端实时语音合成，低延迟高保真。",
+    "analysis": {
+      "relevance_score": 5,
+      "relevance_reason": "端侧 TTS 是 AI 应用的有益补充，但与 AI/LLM/Agent 核心领域关联度一般，偏语音工程方向",
+      "key_points": ["ONNX 原生端侧运行", "多语言多说话人支持", "低延迟高保真实时合成"],
+      "impact": "为端侧 AI 应用提供高质量语音交互能力，推动 TTS 从云端走向本地，但对 LLM/Agent 核心领域影响有限",
+      "category": "tooling"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "20260524-006",
+  "title": "Imbad0202/academic-research-skills",
+  "source_url": "https://github.com/Imbad0202/academic-research-skills",
+  "source_type": "github_trending",
+  "summary": "为 Claude Code 设计的学术研究技能集合，覆盖研究到写作、审阅、修订、定稿的全流程。帮助研究人员利用 AI Agent 加速学术产出，形成标准化研究辅助工具链。",
+  "tags": ["academic-research", "claude-code", "research-workflow", "ai-assisted-writing"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "为 Claude Code 设计的学术研究技能集合，覆盖研究→写作→审阅→修订→定稿全流程的 AI 辅助工具链。",
+  "analysis": {
+    "relevance_score": 7,
+    "key_points": ["覆盖科研全流程的 AI 辅助", "标准化研究工具链", "专为 Claude Code 设计"],
+    "impact": "将 AI Agent 引入学术研究全流程是重要应用方向，但仅限 Claude Code 生态，通用性受限。推动 AI Agent 在学术研究领域的落地，可能改变传统科研工作流，加速学术产出效率",
+    "category": "tooling"
+  }
+}

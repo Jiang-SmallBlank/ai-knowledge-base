@@ -1,0 +1,28 @@
+{
+  "id": "20260524-021",
+  "title": "firecrawl/firecrawl",
+  "source_url": "https://github.com/firecrawl/firecrawl",
+  "source_type": "github_trending",
+  "summary": "AI Agent 网络数据采集与清洗工具，123K 星标",
+  "tags": [
+    "web-scraping",
+    "ai-agent",
+    "data-extraction",
+    "typescript"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "面向 AI Agent 的网络数据采集与清洗工具，将网页转化为干净的 Markdown 格式。值得关注的理由是为 AI Agent 提供高质量的网络数据入口。 (⭐ 123,540 | TypeScript | topics: ai, ai-agents, llm, web-scraping)",
+  "analysis": {
+    "relevance_score": 7,
+    "key_points": [
+      "123,540 stars，将网页内容转化为干净的 Markdown 格式",
+      "专为 AI Agent 设计，支持搜索、抓取、清洗一体化",
+      "TypeScript 实现，被大量 AI Agent 项目集成"
+    ],
+    "impact": "AI Agent 数据管道的关键基础设施，解决 Agent 获取网络数据的核心痛点",
+    "category": "tooling"
+  }
+}

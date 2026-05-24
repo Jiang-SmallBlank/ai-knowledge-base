@@ -1,0 +1,28 @@
+{
+  "id": "20260524-012",
+  "title": "affaan-m/ECC",
+  "source_url": "https://github.com/affaan-m/ECC",
+  "source_type": "github_trending",
+  "summary": "AI Agent 集成 Harness，融合技能、记忆、安全、MCP，189K 星标",
+  "tags": [
+    "agent-harness",
+    "mcp",
+    "coding-agent",
+    "developer-tools"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "AI Agent 集成开发环境（Harness），集成技能、本能、记忆、安全等模块，为 Claude Code、Codex 等编码 Agent 提供性能优化方案。值得关注的理由是它重新定义了 Agent 开发工作台的标准。 (⭐ 189,501 | JavaScript | topics: ai-agents, anthropic, claude, claude-code, llm, mcp)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "189,501 stars，将 Agent 开发所需的技能、本能、记忆、安全集成到统一工作台",
+      "支持 Claude Code、Codex、OpenCode、Cursor 等多 Agent 生态",
+      "集成 MCP 协议，提供可插拔的工具链扩展能力"
+    ],
+    "impact": "重新定义 AI 编码 Agent 开发范式，集成 Harness 模式是 Agent 工程化的关键演进方向，具备改变格局的潜力",
+    "category": "tooling"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "20260524-011",
+  "title": "openclaw/openclaw",
+  "source_url": "https://github.com/openclaw/openclaw",
+  "source_type": "github_trending",
+  "summary": "跨平台 AI 个人助手，开源、隐私优先，374K 星标",
+  "tags": [
+    "ai-assistant",
+    "open-source",
+    "cross-platform",
+    "privacy-first"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "AI 个人助手，跨平台全端覆盖。开源、注重隐私，遵循「龙虾之道」的设计哲学，提供丝滑的 AI 交互体验。值得关注的理由是其极致的用户体验和海量社区支持。 (⭐ 374,262 | TypeScript | topics: ai, assistant, personal, openclaw)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "374,262 stars 证明其是社区最受欢迎的 AI 助手项目之一",
+      "跨平台全端覆盖（桌面/移动/终端），TypeScript 实现",
+      "「龙虾之道」设计哲学强调隐私和自主权，开源无锁定"
+    ],
+    "impact": "个人 AI 助手的开源标杆，374K stars 反映其影响力，但偏消费级产品而非 Agent 核心技术突破",
+    "category": "tooling"
+  }
+}

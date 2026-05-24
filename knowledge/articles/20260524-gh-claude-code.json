@@ -1,0 +1,28 @@
+{
+  "id": "20260524-020",
+  "title": "anthropics/claude-code",
+  "source_url": "https://github.com/anthropics/claude-code",
+  "source_type": "github_trending",
+  "summary": "Anthropic 官方终端编码 Agent，126K 星标，定义编码新范式",
+  "tags": [
+    "claude",
+    "coding-agent",
+    "anthropic",
+    "cli"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "Anthropic 官方出品的终端 AI 编码工具，深度理解代码库，支持自然语言驱动开发。值得关注的理由是它正在重新定义 AI 辅助编码的标准。 (⭐ 126,093 | Shell | topics: N/A)",
+  "analysis": {
+    "relevance_score": 10,
+    "key_points": [
+      "126,093 stars，Anthropic 官方出品，与 Claude 深度绑定",
+      "深度理解代码库结构，支持自然语言驱动的开发工作流",
+      "Agentic 编码模式正在重新定义开发者与代码的交互方式"
+    ],
+    "impact": "改变格局。重新定义 AI 辅助编码范式，从被动补全进化为主动 Agent 协作，由 Anthropic 官方驱动快速迭代",
+    "category": "tooling"
+  }
+}

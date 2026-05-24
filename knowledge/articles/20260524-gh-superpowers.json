@@ -1,0 +1,19 @@
+{
+  "id": "20260524-001",
+  "title": "obra/superpowers",
+  "source_url": "https://github.com/obra/superpowers",
+  "source_type": "github_trending",
+  "summary": "一套开源的 Agentic 技能框架与软件开发方法论，旨在帮助 AI Agent 高效执行编码任务。内置预置 skill 集合和结构化工作流，为 Agent 提供可复用的行为模板，降低 AI 编程工具的使用门槛。",
+  "tags": ["agent-framework", "coding-agent", "workflow", "skill-system"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "一套 Agentic 技能框架与软件开发方法论，帮助 AI Agent 高效执行编码任务，包含预置 skill 和结构化工作流。",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": ["预置 skill 模板降低 Agent 使用门槛", "结构化工作流提升编码效率", "204K stars 反映社区高度认可"],
+    "impact": "直接定义 AI Agent 的编码行为规范，204K stars 印证其影响力，是 Agent 编排领域的里程碑式项目。可能成为 AI 编码 Agent 的事实标准框架，推动 Agent 行为从自由摸索走向规范化、可复用的方法论时代",
+    "category": "tooling"
+  }
+}

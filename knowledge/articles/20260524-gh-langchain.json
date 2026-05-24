@@ -1,0 +1,29 @@
+{
+  "id": "20260524-019",
+  "title": "langchain-ai/langchain",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "source_type": "github_trending",
+  "summary": "LLM 应用开发框架标准，Agent/RAG 生态核心，137K 星标",
+  "tags": [
+    "langchain",
+    "llm",
+    "agent-framework",
+    "rag",
+    "python"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "业界最流行的 LLM 应用开发框架，为构建 AI Agent 和 RAG 系统提供标准化工具链。值得关注的理由是其生态系统的深度和广度。 (⭐ 137,507 | Python | topics: agents, ai, ai-agents, llm, langchain, rag)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "137,507 stars，业界最广泛使用的 LLM 应用开发框架",
+      "覆盖 Agent、RAG、工具调用、多模型接入等全场景",
+      "LangSmith/LangGraph 等子项目形成完整生态"
+    ],
+    "impact": "LLM 应用开发事实标准，生态深度和广度无可替代，成熟框架持续演进",
+    "category": "tooling"
+  }
+}

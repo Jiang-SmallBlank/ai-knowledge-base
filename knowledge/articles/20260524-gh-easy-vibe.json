@@ -1,0 +1,19 @@
+{
+  "id": "20260524-008",
+  "title": "datawhalechina/easy-vibe",
+  "source_url": "https://github.com/datawhalechina/easy-vibe",
+  "source_type": "github_trending",
+  "summary": "面向初学者的 Vibe Coding 现代编程课程（2026 年版），由 Datawhale 社区出品。从零开始逐步引导学习者掌握 AI 辅助编程的完整技能体系。",
+  "tags": ["vibe-coding", "education", "ai-programming", "tutorial"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "面向初学者的 Vibe Coding 现代编程课程，2026 年版。从零开始逐步掌握 AI 辅助编码的完整技能。",
+  "analysis": {
+    "relevance_score": 6,
+    "key_points": ["零基础入门 Vibe Coding", "Datawhale 社区出品", "2026 年最新版本"],
+    "impact": "Vibe Coding 教育课程有助于推广 AI 编程理念，但偏入门级，技术深度和创新性有限。帮助初学者快速进入 AI 辅助编程领域，扩大 AI 编码工具的用户基础，但本身不涉及前沿技术突破",
+    "category": "tutorial"
+  }
+}

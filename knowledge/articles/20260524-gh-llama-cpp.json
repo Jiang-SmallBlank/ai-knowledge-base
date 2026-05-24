@@ -1,0 +1,28 @@
+{
+  "id": "20260524-023",
+  "title": "ggml-org/llama.cpp",
+  "source_url": "https://github.com/ggml-org/llama.cpp",
+  "source_type": "github_trending",
+  "summary": "C/C++ LLM 推理引擎，112K 星标，端侧推理标准",
+  "tags": [
+    "llm-inference",
+    "cpp",
+    "on-device",
+    "quantization"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "纯 C/C++ LLM 推理引擎，支持 CPU 和 GPU 高效本地推理。值得关注的理由是它在端侧推理领域的统治地位和极致性能优化。 (⭐ 112,564 | C++ | topics: N/A)",
+  "analysis": {
+    "relevance_score": 7,
+    "key_points": [
+      "112,564 stars，纯 C/C++ 实现，极致性能优化",
+      "支持 CPU/GPU 本地推理，量化技术让消费级硬件运行 LLM",
+      "是本地 LLM 推理的底层基础设施"
+    ],
+    "impact": "LLM 推理引擎标杆，持续优化性能，本地 AI 不可或缺的基础设施",
+    "category": "tooling"
+  }
+}

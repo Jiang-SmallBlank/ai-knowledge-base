@@ -1,0 +1,19 @@
+{
+  "id": "20260524-005",
+  "title": "colbymchenry/codegraph",
+  "source_url": "https://github.com/colbymchenry/codegraph",
+  "source_type": "github_trending",
+  "summary": "预索引代码知识图谱工具，为 Claude Code、Codex、Cursor、OpenCode 等 AI 编码 Agent 减少 token 消耗和工具调用次数。通过离线索引加速代码理解，降低使用成本。",
+  "tags": ["code-graph", "token-optimization", "coding-agent", "indexing"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "预索引代码知识图谱，为 Claude Code、Codex、Cursor、OpenCode 等 AI 编码 Agent 减少 token 消耗和工具调用次数。",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": ["预索引减少 token 消耗", "降低工具调用次数", "兼容主流 AI 编码 Agent"],
+    "impact": "直接解决 AI 编码 Agent 的 token 开销痛点，预索引策略实用性强，多工具兼容覆盖主流生态。通过降低 token 成本加速 AI 编码工具的普及，预索引思路可能成为 AI 代码理解的标准预处理步骤",
+    "category": "tooling"
+  }
+}

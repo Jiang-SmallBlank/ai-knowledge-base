@@ -1,0 +1,28 @@
+{
+  "id": "20260524-014",
+  "title": "NousResearch/hermes-agent",
+  "source_url": "https://github.com/NousResearch/hermes-agent",
+  "source_type": "github_trending",
+  "summary": "Nous Research 出品自主 AI Agent 框架，164K 星标",
+  "tags": [
+    "ai-agent",
+    "agent-framework",
+    "hermes",
+    "python"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "由 Nous Research 开发的自主 AI Agent 框架，支持多种 LLM 后端和工具调用，从对话 Agent 到多步骤任务协作。值得关注的理由是其模块化设计适合各类 Agent 场景。 (⭐ 164,872 | Python | topics: ai, ai-agent, ai-agents, hermes-agent, llm, openclaw)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "164,872 stars，由知名 AI 研究机构 Nous Research 开发",
+      "支持多 LLM 后端（OpenAI/Anthropic/Local），灵活 Agent 模式",
+      "在 OpenClaw 生态中广泛使用，具备技能系统和工具调用能力"
+    ],
+    "impact": "重要的开源 Agent 框架，模块化设计影响广泛，但 Agent 框架层面未出现范式级突破",
+    "category": "tooling"
+  }
+}

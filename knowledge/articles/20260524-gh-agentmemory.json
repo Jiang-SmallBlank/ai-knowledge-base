@@ -1,0 +1,19 @@
+{
+  "id": "20260524-007",
+  "title": "rohitg00/agentmemory",
+  "source_url": "https://github.com/rohitg00/agentmemory",
+  "source_type": "github_trending",
+  "summary": "AI 编码 Agent 的持久化记忆系统，在真实基准测试中排名第一。帮助 Agent 在跨会话中保持上下文和积累的知识，解决 Agent 的\"记忆丢失\"问题。",
+  "tags": ["agent-memory", "persistence", "context-retention", "benchmark"],
+  "status": "draft",
+  "collected_at": "2026-05-24T00:00:00Z",
+  "analyzed_at": "2026-05-24T12:00:00Z",
+  "published_at": null,
+  "raw_content": "AI 编码 Agent 的持久化记忆系统，基于真实基准测试排名第一。帮助 Agent 在跨会话中保持上下文和知识。",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": ["跨会话持久化记忆", "真实基准测试排名第一", "解决 Agent 上下文丢失痛点"],
+    "impact": "记忆是 Agent 的核心能力瓶颈，该项目以基准第一的成绩直接解决会话持久化问题，对 Agent 实用化影响深远。可能成为 AI 编码 Agent 的记忆层标准方案，推动 Agent 从单次会话工具进化为具备长期记忆的协作伙伴",
+    "category": "tooling"
+  }
+}

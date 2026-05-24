@@ -1,0 +1,28 @@
+{
+  "id": "20260524-015",
+  "title": "anomalyco/opencode",
+  "source_url": "https://github.com/anomalyco/opencode",
+  "source_type": "github_trending",
+  "summary": "开源终端编码 Agent，对标 Claude Code，164K 星标",
+  "tags": [
+    "coding-agent",
+    "open-source",
+    "cli",
+    "typescript"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-24T10:00:00Z",
+  "analyzed_at": "2026-05-24T09:03:16Z",
+  "published_at": null,
+  "raw_content": "开源编码 Agent，对标 Claude Code，支持任意操作系统和平台。提供终端内 AI 辅助编码能力。值得关注的理由是它打破了商业编码 Agent 的垄断地位。 (⭐ 164,552 | TypeScript | topics: N/A)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "164,552 stars，TypeScript 实现的开源编码 Agent",
+      "跨平台支持，为开发者提供终端内 AI 编码能力",
+      "打破了商业编码 Agent（Claude Code）的垄断"
+    ],
+    "impact": "开源编码 Agent 的重要代表，填补了开源生态在终端编码 Agent 领域的空白",
+    "category": "tooling"
+  }
+}
