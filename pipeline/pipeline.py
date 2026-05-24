@@ -26,7 +26,7 @@ from xml.etree import ElementTree
 
 import httpx
 
-from model_client import create_provider, chat_with_retry
+from model_client import create_provider, chat_with_retry, tracker
 
 logger = logging.getLogger(__name__)
 
@@ -648,6 +648,7 @@ def run_pipeline(
 
         logger.info("Step 3 complete: analyzed %d items", len(analyzed))
         if steps == [3]:
+            tracker.report()
             return 0
 
     if 4 in steps:
@@ -667,6 +668,7 @@ def run_pipeline(
 
         if not articles:
             logger.warning("No new articles to save (all duplicates?).")
+            tracker.report()
             return 0
 
         saved = save_articles(articles)
@@ -675,6 +677,7 @@ def run_pipeline(
             len(raw_items), len(articles), saved,
         )
 
+    tracker.report()
     return 0
 
 
