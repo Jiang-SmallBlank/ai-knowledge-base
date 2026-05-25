@@ -1,0 +1,28 @@
+{
+  "id": "20260525-gh-013",
+  "title": "n8n-io/n8n",
+  "source_url": "https://github.com/n8n-io/n8n",
+  "source_type": "github",
+  "summary": "n8n：具备原生AI能力的低代码工作流自动化平台",
+  "tags": [
+    "workflow",
+    "automation",
+    "ai",
+    "open-source"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-25T11:53:46Z",
+  "analyzed_at": "2026-05-25T11:53:56Z",
+  "published_at": null,
+  "raw_content": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. (stars: 189,626 | lang: TypeScript | topics: ai, apis, automation, cli, data-flow, development, integration-framework, integrations, ipaas, low-code, low-code-platform, mcp, mcp-client, mcp-server, n8n, no-code, self-hosted, typescript, workflow, workflow-automation)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "Fair-code许可，支持自托管或云部署，集成400+服务",
+      "结合可视化构建与自定义代码，原生支持AI能力",
+      "支持MCP协议（客户端/服务器），扩展AI代理工作流"
+    ],
+    "impact": "n8n作为高星开源工作流平台，其原生AI集成和MCP支持将显著降低AI工作流构建门槛，推动自动化与AI的深度融合。",
+    "category": "application"
+  }
+}

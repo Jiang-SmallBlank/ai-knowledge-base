@@ -1,0 +1,27 @@
+{
+  "id": "20260525-gh-016",
+  "title": "f/prompts.chat",
+  "source_url": "https://github.com/f/prompts.chat",
+  "source_type": "github",
+  "summary": "社区驱动的ChatGPT提示词分享与发现平台",
+  "tags": [
+    "open-source",
+    "ai",
+    "llm"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-25T11:53:46Z",
+  "analyzed_at": "2026-05-25T11:54:10Z",
+  "published_at": null,
+  "raw_content": "f/prompts.chat: f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy. (stars: 162,798 | lang: HTML | topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, claude, gemini, gpt, gpt-4, llm, machine-learning, nextjs, open-source, openai, prompt-engineering, prompts, prompts-chat, typescript)",
+  "analysis": {
+    "relevance_score": 8,
+    "key_points": [
+      "拥有162,798星标的开源提示词社区平台",
+      "支持ChatGPT、Claude、Gemini等多种LLM提示词分享",
+      "可自托管部署，保障组织隐私安全"
+    ],
+    "impact": "作为最受欢迎的提示词工程社区项目之一，显著降低了LLM使用门槛并促进了提示词知识的共享与协作。",
+    "category": "application"
+  }
+}

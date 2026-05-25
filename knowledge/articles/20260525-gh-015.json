@@ -1,0 +1,27 @@
+{
+  "id": "20260525-gh-015",
+  "title": "AUTOMATIC1111/stable-diffusion-webui",
+  "source_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "source_type": "github",
+  "summary": "Stable Diffusion WebUI：最流行的图像生成工具",
+  "tags": [
+    "ai",
+    "application",
+    "python"
+  ],
+  "status": "draft",
+  "collected_at": "2026-05-25T11:53:46Z",
+  "analyzed_at": "2026-05-25T11:54:07Z",
+  "published_at": null,
+  "raw_content": "AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI (stars: 163,264 | lang: Python | topics: ai, ai-art, deep-learning, diffusion, gradio, image-generation, image2image, img2img, pytorch, stable-diffusion, text2image, torch, txt2img, unstable, upscaling, web)",
+  "analysis": {
+    "relevance_score": 9,
+    "key_points": [
+      "拥有16.3万星标，是GitHub上最热门的AI图像生成项目",
+      "基于Gradio构建，提供文本生成图像、图像到图像、放大等功能",
+      "支持PyTorch和多种扩散模型，社区生态极其丰富"
+    ],
+    "impact": "作为Stable Diffusion生态的核心界面，极大降低了AI图像生成的使用门槛，推动了AI艺术创作的普及。",
+    "category": "application"
+  }
+}
